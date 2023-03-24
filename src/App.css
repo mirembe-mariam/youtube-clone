@@ -1,0 +1,3 @@
+.app__body{
+    display: flex;/*this removes the two components from dispalying as block to flex*/
+}

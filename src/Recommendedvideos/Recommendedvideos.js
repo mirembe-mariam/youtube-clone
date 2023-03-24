@@ -3,7 +3,9 @@ import "./Recommendedvideos.css"
 
 function Recommendedvideos() {
   return (
-    <div>Recommendedvideos</div>
+    <div className='recommended'>
+       
+    </div>
   )
 }
 

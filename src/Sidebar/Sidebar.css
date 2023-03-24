@@ -1,0 +1,3 @@
+.sidebar{
+    flex: 0.2;/*so here we want sidebar to occupy 20% of the app body*/
+}
