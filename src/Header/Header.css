@@ -1,0 +1,58 @@
+.header{ /*this styling applies to all children of this classname*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; /*this creates a space like at the margin so that they arent so clsoe to it*/
+   position: sticky;/*ine 6-9 helps to have a non-transaparent,sticky header incases where we are scrolling
+   and we dont want the header to disappear*/
+   top: 0;
+   z-index: 100;
+   background-color: white;
+}
+.header__left > img{
+    height: 25px;
+    object-fit: contain;
+    margin-left: 10px;/*i dont want it to be too close to the menu icon */
+}
+.header__micIcon {
+    margin-left: 10px;
+    height: 20px;
+    width: 20px;
+    color: gray;
+  }
+.header__input{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    border:1px solid black;
+}
+.header__icons{
+    display: flex;
+    align-items: center;
+}
+.header__input > input{
+    flex: 1;
+    border: none;
+}
+/*.header__inputButton{
+width: 50% !important; since we are targeting the button we add that statemet to override the default style
+background-color: #fafafa;
+border-left: 5px solid lightgray;
+color: gray;
+}*/
+.header__icon{
+    margin-right: 10px;
+}
+.header__inputButton {
+    color: #fff;
+    background-color: #f90404;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 36px;
+    width: 60px;
+    border-radius: 2px;
+    transition: all 0.2s ease-in-out;
+}
+
+  
