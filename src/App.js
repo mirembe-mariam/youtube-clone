@@ -1,5 +1,8 @@
 import Header from "./Header/Header.js";
-import Sidebar from "./Sidebar/Sidebar.js";
+import { Sidebar, MobileSidebar } from './Sidebar/Sidebar';
+
+
+//import Sidebar from "./Sidebar/Sidebar.js";
 import Recommendedvideos from "./Recommendedvideos/Recommendedvideos";
 import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -19,6 +22,7 @@ function App() {
           <Route path="/search/:searchTerm" element={<div className="app__body"><Sidebar /><SearchPage /></div>}/>{/*here we are
           adding the sidebar because we want wen it redirects us to the search page we want the side bar there too*/}
           <Route path="/" element={<div className="app__body"><Sidebar /><Recommendedvideos /></div>}/>
+          <Route path="/mobile" element={<div className="app__body"><MobileSidebar /></div>} />
         </Routes>
       </Router>
     </div>
