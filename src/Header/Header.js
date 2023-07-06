@@ -19,18 +19,19 @@ function Header() {
   };
 
   return (
-  <>
+    <>
       {/* Header */}
       <div className="header">
         <div className="header__left">
-          <MenuSharpIcon className="header__menu" onClick={handleMenuIconClick} />
-          <NavLink to="/">
-            <div className="header__logo">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0vYBs7_HrbRjopuvwH2PZ_5dRAz3USmLspA&usqp=CAU"
-                alt=""
-              />
-            </div>
+          <MenuSharpIcon
+            className="header__menu"
+            onClick={handleMenuIconClick}
+          />
+          <NavLink to="/" className="header__logo">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0vYBs7_HrbRjopuvwH2PZ_5dRAz3USmLspA&usqp=CAU"
+              alt=""
+            />
           </NavLink>
         </div>
 
@@ -67,8 +68,8 @@ function Header() {
 }
 
 export default Header;
-//The onChange attribute is used to specify a function that gets called every time the user types 
-//something into the input field. In this case, the function updates the inputSearch state variable 
+//The onChange attribute is used to specify a function that gets called every time the user types
+//something into the input field. In this case, the function updates the inputSearch state variable
 //with the new value using the setInputSearch() function. The function setInputSearch takes one argument,
-// which is the new value of the inputSearch variable. The e.target.value expression inside the function 
+// which is the new value of the inputSearch variable. The e.target.value expression inside the function
 //gets the value of the input field that the user just typed.

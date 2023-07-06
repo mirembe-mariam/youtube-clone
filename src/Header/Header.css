@@ -10,8 +10,9 @@
 }
 
 .header__logo {
-  width: 75px;
-  height: 50px;
+  width: 7rem;
+  display: flex;
+  align-items: center;
 }
 
 .header__logo img {
@@ -43,10 +44,23 @@
 .header__input>input {
   flex: 1;
   border: none;
+  outline: none;
+  padding-left: 0.5rem;
+}
+
+.header__input>a {
+  display: flex;
+  align-items: center;
 }
 
 .header__icon {
   margin-right: 20px;
+  cursor: pointer;
+}
+
+.header__mic {
+  padding: 0 0.3rem;
+  cursor: pointer;
 }
 
 .header__inputButton {
@@ -55,10 +69,11 @@
   border: none;
   outline: none;
   cursor: pointer;
-  height: 36px;
-  width: 60px;
+  height: 2rem!important;
+  width: 2rem!important;
   border-radius: 2px;
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .header__left {
